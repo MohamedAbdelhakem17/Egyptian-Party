@@ -1,0 +1,346 @@
+/* ==================== Statrt Global Rules ==================== */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ==================== End Global Rules ==================== */
+/* ==================== Strat Header ==================== */
+.header {
+  height: 100vh;
+  background-image: url("../img/pexels-sebastian-ervi-1763075.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.header .container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.header .container h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.header .container p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/* ==================== End Header ==================== */
+/* ==================== Start navbar ==================== */
+.nav {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100vh;
+  z-index: 1111;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.navbar {
+  background-color: #414658;
+  height: 100%;
+}
+.toggel {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .links {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+}
+.navbar .links li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.navbar .links li a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .header .container h1 {
+    text-align: center;
+  }
+}
+/* ==================== End navbar ==================== */
+
+/* ==================== Start Details ==================== */
+.details .container {
+  padding: 4rem 2rem;
+}
+
+.details .container .box {
+  width: 80%;
+  margin: auto;
+}
+.details .container .box .head,
+.details .container .box .body {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #06283d;
+  color: white;
+}
+.details .container .box .head {
+  cursor: pointer;
+}
+.details .container .box .body {
+  background-color: #e94560;
+  line-height: 1.8;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .details .container {
+    padding: 3rem 1rem;
+  }
+  .details .container .box {
+    width: 100%;
+  }
+}
+/* ==================== End Details ==================== */
+/* ==================== Start Events ==================== */
+.events {
+  padding: 5rem 2rem;
+  background-image: url("../img/wallpaper-TechnoTour.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.events .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events .main-title {
+  text-align: center;
+  font-size: 4rem;
+  color: #09c;
+  font-style: italic;
+}
+.events .info .time {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+.events .info .time .unit {
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+  transition: all 0.5s linear;
+}
+.events .info .time .unit span {
+  display: block;
+  transition: all 0.5s linear;
+}
+.events .info .time .unit span:first-child {
+  font-size: 35px;
+  padding: 15px;
+  color: #09c;
+  font-weight: bold;
+}
+.events .info .time .unit span:last-child {
+  padding: 8px 10px;
+  font-size: 13px;
+  border-top: 1px solid #d4d4d4;
+  color: white;
+  font-weight: 700;
+}
+.events .info .time .unit:hover,
+.events .info .time .unit:hover span:last-child {
+  border-color: #09c;
+}
+.events .title {
+  text-align: center;
+  margin: 40px 0 0;
+  font-size: 30px;
+  color: #09c;
+}
+.events .description {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 19px;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .events {
+    padding: 2rem;
+  }
+  .events .main-title {
+    font-size: 2.5rem;
+  }
+  .events .info .time {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .events .info .time .unit {
+    width: 100%;
+  }
+}
+/* ==================== End Events ==================== */
+
+/* ==================== Start Contact ==================== */
+.contact {
+  padding: 4rem 1.5rem;
+}
+.contact h2 {
+  text-align: center;
+  color: #09c;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.contact .container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.contact .container .info {
+  width: 50%;
+  padding: 1rem;
+}
+.contact .info .title h3,
+.contact .info .contact-info h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.contact .info .title p,
+.contact .info .contact-info p {
+  line-height: 1.8;
+  color: #777;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.contact .container .address li {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #777;
+}
+.contact .container .address li span {
+  margin-right: 10px;
+}
+.contact .container .address li a {
+  color: #09c;
+}
+.contact .container .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact .container .social .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px #09c solid;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.contact .container .social .icon a {
+  color: #09c;
+}
+.contact .container .form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .container .form input {
+  width: 90%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.contact .container .form input::placeholder,
+.contact .container .form textarea::placeholder {
+  font-size: 20px;
+}
+.contact .container .form textarea {
+  resize: none;
+  width: 90%;
+  padding: 1rem;
+}
+.contact .container .form p {
+  text-align: left;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.contact .container .form p span {
+  color: #09c;
+  font-weight: 600;
+}
+.contact .container .form button {
+  color: #09c;
+  font-weight: 600;
+  background: transparent;
+  padding: 1rem 2rem;
+  border: 2px #09c solid;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact .container .form,
+  .contact .container .info {
+    width: 100%;
+  }
+}
+/* ==================== End Contact ==================== */
